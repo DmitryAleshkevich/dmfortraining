@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProblem2
 {
-    public class Item
+    public class Item : IAnyItem
     {
         #region Fields
 
@@ -39,6 +39,15 @@ namespace ConsoleProblem2
         {
             get { return quantity; }
             set { quantity = value; }
+        }
+
+        #endregion
+
+        #region Methods
+
+        public IAnyItem CreateItem(string name, double price, double quantity)
+        {
+            return new Item(name, price, quantity);
         }
 
         #endregion
@@ -57,7 +66,7 @@ namespace ConsoleProblem2
         #endregion
     }
 
-    public struct StrItem
+    public struct StrItem : IAnyItem
     {
         #region Fields
 
@@ -90,6 +99,15 @@ namespace ConsoleProblem2
         {
             get { return quantity; }
             set { quantity = value; }
+        }
+
+        #endregion
+
+        #region Methods
+
+        public IAnyItem CreateItem(string name, double price, double quantity)
+        {
+            return new StrItem(name, price, quantity);
         }
 
         #endregion

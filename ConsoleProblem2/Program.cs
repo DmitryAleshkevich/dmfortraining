@@ -11,12 +11,19 @@ namespace ConsoleProblem2
     {
         static void Main(string[] args)
         {
-            WorkWith(MyEnumModules.Class);
-            WorkWith(MyEnumModules.Structure);
+            Item item1 = new Item();
+            StrItem item2 = new StrItem();
+            IAnyItem[] items = { item1, item2 };
+
+            foreach (IAnyItem item in items)
+            {
+                WorkWith(item);
+            }
+
             Console.ReadLine();
         }
 
-        static void WorkWith(MyEnumModules enm)
+        static void WorkWith(IAnyItem item)
         {
             DateTime dt1 = DateTime.UtcNow;
 
@@ -24,25 +31,13 @@ namespace ConsoleProblem2
             Random rand = new Random();
             double costSum = 0;
 
-            if (enm == MyEnumModules.Class)  
+            for (int i = 1; i < 100001; i++)
             {
-                for (int i = 1; i < 100001; i++)
-                {
-                    Item it = new Item("Item" + i, rand.Next(), rand.Next());
-                    al.Add(it);
-                    costSum += it.Cost;
-                }
-            }        
-            else
-            {
-                for (int i = 1; i < 100001; i++)
-                {
-                    StrItem it = new StrItem("Item" + i, rand.Next(), rand.Next());
-                    al.Add(it);
-                    costSum += it.Cost;
-                }
+                IAnyItem it = item.CreateItem("Item" + i, rand.Next(), rand.Next());
+                al.Add(it);
+                costSum += it.Cost;
             }
-                
+               
             Console.WriteLine("Total sum is {0}", costSum);
 
             DateTime dt2 = DateTime.UtcNow;
@@ -53,9 +48,5 @@ namespace ConsoleProblem2
             
         }
 
-        public enum MyEnumModules
-        {
-            Class,Structure
-        }
     }
 }
