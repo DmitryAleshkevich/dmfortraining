@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleProblem3", "ConsoleProblem3\ConsoleProblem3.csproj", "{1E557AD3-B7F5-450A-A08E-1B131E0E0261}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E557AD3-B7F5-450A-A08E-1B131E0E0261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E557AD3-B7F5-450A-A08E-1B131E0E0261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E557AD3-B7F5-450A-A08E-1B131E0E0261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E557AD3-B7F5-450A-A08E-1B131E0E0261}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
