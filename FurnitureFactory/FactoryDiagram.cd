@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FurnitureFactory.Constructions" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAgAAAAIBAAAQAAAAEAACAAAAAgAAAAAA=</HashCode>
+      <FileName>Constructions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.Component">
+    <Position X="18.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Component.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Door">
+    <Position X="11" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CUAAAAgAAEAAoAAAQIAABAAAAAAAAAAAAAAAAAHAAAA=</HashCode>
+      <FileName>Door.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Shelf">
+    <Position X="24.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAAAAAAQAAABAAAAAAAAAAAAAgAAABIAAA=</HashCode>
+      <FileName>Shelf.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Box">
+    <Position X="26.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CUAAAAgAAEAAIAAAQAAABAAAAAAAAAAAAAAAAAHAAAA=</HashCode>
+      <FileName>Box.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Glass">
+    <Position X="22.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAEAAAAAAQAAABAAhAAAAIAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Glass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Leg">
+    <Position X="20" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAAgAAEAAAAAAAAAABAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Leg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.Pouf">
+    <Position X="17.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAAgAAAAIAABAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Pouf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.Carcass">
+    <Position X="15.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Carcass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.Armrest">
+    <Position X="13.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAEAAgAAAAIAABAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Armrest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.Chair">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAABAAIAAQACEAAAAAAAAIAAAAAAAAAFAAAA=</HashCode>
+      <FileName>Chair.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.DirectorFurnitureCreator" Collapsed="true">
+    <Position X="31" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAEAAAAAAAAAEAQAAAAAAAAAA=</HashCode>
+      <FileName>DirectorFurnitureCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.ChairBuilder" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ChairBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.FoldingChair">
+    <Position X="1.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAEAAQAAAAAYAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FoldingChair.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Sofa">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAEAAAAAAAAYAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Sofa.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.FoldingSofa">
+    <Position X="1.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAEAAQAAAAAYAAAAAAEAAAAAAA=</HashCode>
+      <FileName>FoldingSofa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.ConstructionsBuilder">
+    <Position X="16.25" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAIAQAAgAAAAJAAAAQAAAAEAASAAAAAgAhAAAA=</HashCode>
+      <FileName>ConstructionsBuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Table">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAgAAABAAIAAQACAAAAAAAAAAAAAAAEAAAFAAAg=</HashCode>
+      <FileName>Table.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Stand">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAABAIIAAQACAAAAAAAABAAAAAQEAAAHAAAg=</HashCode>
+      <FileName>Stand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FurnitureFactory.Cupboard">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAQAAAAAAAAAAAAAAAAAEAAACAAAg=</HashCode>
+      <FileName>Cupboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.Bed">
+    <Position X="4" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAQAAEAAAAAAAAYAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Bed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.TableBuilder">
+    <Position X="10.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>TableBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.StandBuilder">
+    <Position X="8.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>StandBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.CupboardBuilder">
+    <Position X="15" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>CupboardBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.SofaBuilder">
+    <Position X="19.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>SofaBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.FoldingChairBuilder">
+    <Position X="17.25" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>FoldingChairBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.FoldingSofaBuilder">
+    <Position X="22" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>FoldingSofaBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.BedBuilder">
+    <Position X="24.5" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAIAAAAAACAAAAEAAAAAAAAAAAAAgAEAAEAAAA=</HashCode>
+      <FileName>BedBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FurnitureFactory.ConstructionsCollection&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAQAAAAAAAABgQgAAABAQAAAAAAAAAAAAQAABQIEA=</HashCode>
+      <FileName>ConstructionsCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="FurnitureFactory.IMontage" Collapsed="true">
+    <Position X="31" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMontage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.ISellable" Collapsed="true">
+    <Position X="31" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISellable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.IOpenClose" Collapsed="true">
+    <Position X="29.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>IOpenClose.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.IMovable" Collapsed="true">
+    <Position X="32.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAg=</HashCode>
+      <FileName>IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.ISittable">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISittable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.IComfortSittable">
+    <Position X="0.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IComfortSittable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.ILieDownable">
+    <Position X="0.5" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILieDownable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.ITransformable" Collapsed="true">
+    <Position X="32.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITransformable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FurnitureFactory.IBuilderFurniture" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAABAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>IBuilderFurniture.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="FurnitureFactory.Sides" Collapsed="true">
+    <Position X="29.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAIAAI=</HashCode>
+      <FileName>Sides.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
