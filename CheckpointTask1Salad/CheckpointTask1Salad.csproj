@@ -42,24 +42,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CannedFood.cs" />
+    <Compile Include="CannedFoodCreator.cs" />
     <Compile Include="Cheeses.cs" />
-    <Compile Include="Component.cs" />
+    <Compile Include="CheesesCreator.cs" />
     <Compile Include="Fish.cs" />
+    <Compile Include="FishCreator.cs" />
     <Compile Include="Greens.cs" />
+    <Compile Include="GreensCreator.cs" />
     <Compile Include="Groats.cs" />
+    <Compile Include="GroatsCreator.cs" />
     <Compile Include="IBoilable.cs" />
     <Compile Include="IChopable.cs" />
     <Compile Include="IColorable.cs" />
+    <Compile Include="IComponent.cs" />
+    <Compile Include="IFabricComponents.cs" />
     <Compile Include="IFryable.cs" />
     <Compile Include="IOpenable.cs" />
     <Compile Include="IPeelable.cs" />
     <Compile Include="ISaladAddable.cs" />
     <Compile Include="Meat.cs" />
+    <Compile Include="MeatCreator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spices.cs" />
+    <Compile Include="SpicesCreator.cs" />
     <Compile Include="Tastes.cs" />
     <Compile Include="Vegetable.cs" />
+    <Compile Include="VegetableCreator.cs" />
     <Compile Include="Vitamins.cs" />
   </ItemGroup>
   <ItemGroup>
