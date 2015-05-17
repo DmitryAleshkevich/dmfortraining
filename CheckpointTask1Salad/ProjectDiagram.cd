@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CheckpointTask1Salad.Vegetable" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>JAQAAAAEAACABAAgAABAgBQAUCAUAFAgAAAAgCAEAAA=</HashCode>
       <FileName>Vegetable.cs</FileName>
@@ -9,7 +9,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Meat" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4" Y="2.5" Width="1.5" />
+    <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>JAQAAAAEAAAABAAgAABAgBQAUCAUAFAgAAAAACAEAAA=</HashCode>
       <FileName>Meat.cs</FileName>
@@ -17,7 +17,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Fish" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAQAAAAEAACABAAgAABAgBQAUCAUAFAgAAAAgCAEAAA=</HashCode>
       <FileName>Fish.cs</FileName>
@@ -33,7 +33,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Greens" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>JAQAAAAEAAAABAAAAABAgBQAUCAUABAgAAAAACAEAAA=</HashCode>
       <FileName>Greens.cs</FileName>
@@ -41,7 +41,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Spices" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Position X="5.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAQAAAAEAAAABAAAAABAgBQAUCAUABAgAAAAACAEAAA=</HashCode>
       <FileName>Spices.cs</FileName>
@@ -57,7 +57,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Groats" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Position X="5.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAQAAAAEAAAABAAgAABAgBQAUCAUABAgAAAAACAEAAA=</HashCode>
       <FileName>Groats.cs</FileName>
@@ -81,7 +81,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.GreensCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="1.5" Width="1.5" />
+    <Position X="4" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>GreensCreator.cs</FileName>
@@ -89,7 +89,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.GroatsCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="2.5" Width="1.5" />
+    <Position X="7.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>GroatsCreator.cs</FileName>
@@ -97,7 +97,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.MeatCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="2.5" Width="1.5" />
+    <Position X="2.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>MeatCreator.cs</FileName>
@@ -105,7 +105,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.SpicesCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Position X="7.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>SpicesCreator.cs</FileName>
@@ -113,7 +113,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.FishCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+    <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>FishCreator.cs</FileName>
@@ -121,10 +121,18 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.VegetableCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="3.5" Width="1.5" />
+    <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>VegetableCreator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CheckpointTask1Salad.SaladCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAQABAAAAAADAQAIAABAQAAAAAAAAAAAAAAABQIEA=</HashCode>
+      <FileName>SaladCollection.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -143,7 +151,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IPeelable" Collapsed="true">
-    <Position X="5.75" Y="5.5" Width="1.5" />
+    <Position X="4" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IPeelable.cs</FileName>
@@ -157,21 +165,21 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IFryable" Collapsed="true">
-    <Position X="2.25" Y="5.5" Width="1.5" />
+    <Position X="0.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>IFryable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.ISaladAddable" Collapsed="true">
-    <Position X="0.5" Y="6.25" Width="1.5" />
+    <Position X="5.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ISaladAddable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IOpenable" Collapsed="true">
-    <Position X="4" Y="5.5" Width="1.5" />
+    <Position X="2.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IOpenable.cs</FileName>
@@ -188,21 +196,21 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IFabricComponents" Collapsed="true">
-    <Position X="0.5" Y="5.5" Width="1.5" />
+    <Position X="7.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>IFabricComponents.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="CheckpointTask1Salad.Vitamins" Collapsed="true">
-    <Position X="2.25" Y="7.25" Width="1.5" />
+    <Position X="2.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAppFCAAA=</HashCode>
       <FileName>Vitamins.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="CheckpointTask1Salad.Tastes" Collapsed="true">
-    <Position X="0.5" Y="7.25" Width="1.5" />
+    <Position X="0.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAEgAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Tastes.cs</FileName>

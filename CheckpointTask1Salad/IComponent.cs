@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CheckpointTask1Salad
 {
-    interface IComponent
+    public interface IComponent
     {
         double Calories { get; set; }
         double Carbohydrates { get; set; }

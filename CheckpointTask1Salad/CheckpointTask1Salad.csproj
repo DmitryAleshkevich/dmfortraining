@@ -64,6 +64,7 @@
     <Compile Include="MeatCreator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaladCollection.cs" />
     <Compile Include="Spices.cs" />
     <Compile Include="SpicesCreator.cs" />
     <Compile Include="Tastes.cs" />
