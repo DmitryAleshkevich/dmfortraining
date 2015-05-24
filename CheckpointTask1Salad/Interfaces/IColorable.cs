@@ -7,6 +7,6 @@ namespace CheckpointTask1Salad
 {
     public interface IColorable
     {
-        ConsoleColor Color { get; set; } 
+        string Color { get; set; } 
     }
 }

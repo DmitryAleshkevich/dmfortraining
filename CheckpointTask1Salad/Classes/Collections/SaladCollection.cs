@@ -77,12 +77,15 @@ namespace CheckpointTask1Salad
             return componentItems.Sum<IComponent>(x => x.Calories);
         }
 
-        public void SortByWeight()
+        public void Sort(string fieldName)
         {
-            componentItems = componentItems.OrderBy(x => x.Weight).ToList<IComponent>();
+            if (fieldName == "weight")
+            {
+                componentItems = componentItems.OrderBy(x => x.Weight).ToList<IComponent>();
+            }
         }
 
-        public IEnumerable<IComponent> GetItemsDiapasoneForCalories(double lowvalue, double highvalue)
+        public IEnumerable<IComponent> GetItemsRangeForCalories(double lowvalue, double highvalue)
         {
             return componentItems.Where(x => (x.Calories >= lowvalue && x.Calories <= highvalue));
         }
