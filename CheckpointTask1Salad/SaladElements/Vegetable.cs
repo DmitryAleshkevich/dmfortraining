@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CheckpointTask1Salad
 {
-    public class Vegetable : SaladItem, IColorable, IChopable, IPeelable, IBoilable, IFryable, ISaladAddable
+    public class Vegetable : SaladItem, IColorable, IChopable, IPeelable, IBoilable, IFryable
     {        
         #region Realization
         public string Color { get; set; }
@@ -30,7 +30,7 @@ namespace CheckpointTask1Salad
             Console.WriteLine("Vegetable {0} was fryed!", this.Name);
         }
 
-        public void AddToSalad()
+        public override void AddToSalad()
         {
             Console.WriteLine("Vegetable {0} was added to salad!", this.Name);
         }

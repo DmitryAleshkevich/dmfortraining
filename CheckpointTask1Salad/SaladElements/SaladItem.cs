@@ -24,5 +24,7 @@ namespace CheckpointTask1Salad
 
         public double Weight { get; set; }
         #endregion
+
+        public abstract void AddToSalad();
     }
 }

@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CheckpointTask1Salad.Vegetable" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="16.25" Y="4.75" Width="1.5" />
+    <Position X="5.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAACAAAAgAAAAgAAAAAAAAEAAAAAAgAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\Vegetable.cs</FileName>
+      <FileName>SaladElements\Vegetable.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Meat" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="4.75" Width="1.5" />
+    <Position X="4" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAgAAAAgAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\Meat.cs</FileName>
+      <FileName>SaladElements\Meat.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Fish" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5" Y="4.75" Width="1.5" />
+    <Position X="2.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAgAAAAgAAAAAAAAEAAAAAAgAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\Fish.cs</FileName>
+      <FileName>SaladElements\Fish.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -28,39 +28,38 @@
     <Position X="0.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\CannedFood.cs</FileName>
+      <FileName>SaladElements\CannedFood.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Greens" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7.25" Y="4.75" Width="1.5" />
+    <Position X="2.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\Greens.cs</FileName>
+      <FileName>SaladElements\Greens.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Spices" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="4.75" Width="1.5" />
+    <Position X="5.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\Spices.cs</FileName>
+      <FileName>SaladElements\Spices.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Cheeses" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.75" Y="4.75" Width="1.5" />
+    <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\Cheeses.cs</FileName>
+      <FileName>SaladElements\Cheeses.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Groats" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="9.5" Y="4.75" Width="1.5" />
+    <Position X="4" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\ChildClasses\Groats.cs</FileName>
+      <FileName>SaladElements\Groats.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -68,187 +67,179 @@
     <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\CannedFoodCreator.cs</FileName>
+      <FileName>SaladElementCreators\CannedFoodCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.CheesesCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+    <Position X="0.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\CheesesCreator.cs</FileName>
+      <FileName>SaladElementCreators\CheesesCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.GreensCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="11.75" Y="1.75" Width="1.5" />
+    <Position X="4" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\GreensCreator.cs</FileName>
+      <FileName>SaladElementCreators\GreensCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.GroatsCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="14" Y="1.75" Width="1.5" />
+    <Position X="5.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\GroatsCreator.cs</FileName>
+      <FileName>SaladElementCreators\GroatsCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.MeatCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7.25" Y="1.75" Width="1.5" />
+    <Position X="4" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\MeatCreator.cs</FileName>
+      <FileName>SaladElementCreators\MeatCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.SpicesCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="16.25" Y="1.75" Width="1.5" />
+    <Position X="5.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\SpicesCreator.cs</FileName>
+      <FileName>SaladElementCreators\SpicesCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.FishCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5" Y="1.75" Width="1.5" />
+    <Position X="2.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\FishCreator.cs</FileName>
+      <FileName>SaladElementCreators\FishCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.VegetableCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="9.5" Y="1.75" Width="1.5" />
+    <Position X="2.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\VegetableCreator.cs</FileName>
+      <FileName>SaladElementCreators\VegetableCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CheckpointTask1Salad.SaladCollection" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="22.25" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACIAQAAAAAAAADAQAIAABAQgAAAAAAAAAAAAAABQIEA=</HashCode>
-      <FileName>Classes\Collections\SaladCollection.cs</FileName>
+      <HashCode>ACIAQAAAAAAAABAQAIAQBAQgAAAAAAAAAAAAAABQIEA=</HashCode>
+      <FileName>Collections\SaladCollection.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.SaladItem" Collapsed="true">
-    <Position X="8.25" Y="3.5" Width="1.5" />
+    <Position X="3" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAAEAAAAAAAAAAAAABQAQCAAABAAAAAAAAAEAAA=</HashCode>
-      <FileName>Classes\ItemsClasses\AbstractClasses\SaladItem.cs</FileName>
+      <HashCode>IAAAAAAEAAAAAAAAAAAAgBQAQCAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>SaladElements\SaladItem.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="CheckpointTask1Salad.SaladItemsCreator" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Classes\CreatorClasses\SaladItemsCreator.cs</FileName>
+      <FileName>SaladElementCreators\SaladItemsCreator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.GreekSaladBuilder" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="20.5" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAgAIAAIAAAAAAAEAAAACAACAAAAgAAEAAAAQAA=</HashCode>
-      <FileName>GreekSaladBuilder.cs</FileName>
+      <HashCode>AAEAAAgAIABIIAAACAAEAAAACAACQAAAgAAEAAAAQAA=</HashCode>
+      <FileName>CookingMasters\GreekSaladBuilder.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="CheckpointTask1Salad.Chief" Collapsed="true">
-    <Position X="18.75" Y="0.5" Width="1.5" />
+    <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Chief.cs</FileName>
+      <FileName>CookingMasters\Chief.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="CheckpointTask1Salad.SaladItemProperties" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="18.75" Y="1.75" Width="1.5" />
+    <Position X="7.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAEAAAAAAAAAAAAABQAQCAAABAAAAAAgAAEAAA=</HashCode>
-      <FileName>SaladItemProperties.cs</FileName>
+      <FileName>SaladElementCreators\SaladItemProperties.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
   </Struct>
   <Interface Name="CheckpointTask1Salad.IColorable" Collapsed="true">
-    <Position X="22.25" Y="3" Width="1.5" />
+    <Position X="7.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
-      <FileName>Interfaces\IColorable.cs</FileName>
+      <FileName>SaladElementInterfaces\IColorable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IChopable" Collapsed="true">
-    <Position X="20.5" Y="3" Width="1.5" />
+    <Position X="7.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IChopable.cs</FileName>
+      <FileName>SaladElementInterfaces\IChopable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IPeelable" Collapsed="true">
-    <Position X="24" Y="3.75" Width="1.5" />
+    <Position X="7.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IPeelable.cs</FileName>
+      <FileName>SaladElementInterfaces\IPeelable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IBoilable" Collapsed="true">
-    <Position X="18.75" Y="3" Width="1.5" />
+    <Position X="7.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IBoilable.cs</FileName>
+      <FileName>SaladElementInterfaces\IBoilable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IFryable" Collapsed="true">
-    <Position X="20.5" Y="3.75" Width="1.5" />
+    <Position X="7.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IFryable.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="CheckpointTask1Salad.ISaladAddable" Collapsed="true">
-    <Position X="18.75" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\ISaladAddable.cs</FileName>
+      <FileName>SaladElementInterfaces\IFryable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IOpenable" Collapsed="true">
-    <Position X="22.25" Y="3.75" Width="1.5" />
+    <Position X="7.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IOpenable.cs</FileName>
+      <FileName>SaladElementInterfaces\IOpenable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IComponent" Collapsed="true">
-    <Position X="24" Y="3" Width="1.5" />
+    <Position X="4.75" Y="3.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Properties" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>IAAAAAAEAAAAAAAAAAAAABQAQCAAABAAAAAAAAAEAAA=</HashCode>
-      <FileName>Interfaces\IComponent.cs</FileName>
+      <HashCode>IAAAAAAEAAAAAAAAAAAAgBQAQCAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>SaladElements\IComponent.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.IFabricComponents" Collapsed="true">
-    <Position X="18.75" Y="3.75" Width="1.5" />
+    <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAABAA=</HashCode>
-      <FileName>Interfaces\IFabricComponents.cs</FileName>
+      <FileName>SaladElementCreators\IFabricComponents.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="CheckpointTask1Salad.ISaladBuilder" Collapsed="true">
-    <Position X="20.5" Y="4.5" Width="1.5" />
+    <Position X="7.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAgAIAAIAAAAAAAAAAAACAACAAAAgAAEAAAAQAA=</HashCode>
-      <FileName>ISaladBuilder.cs</FileName>
+      <HashCode>AAEAAAgAIAAIIAAAAAAAAAAACAACAAAAgAAEAAAAQAA=</HashCode>
+      <FileName>SaladElementInterfaces\ISaladBuilder.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="CheckpointTask1Salad.Vitamins" Collapsed="true">
-    <Position X="20.5" Y="5.5" Width="1.5" />
+    <Position X="4" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAppFCAAA=</HashCode>
       <FileName>Enums\Vitamins.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="CheckpointTask1Salad.Tastes" Collapsed="true">
-    <Position X="18.75" Y="5.5" Width="1.5" />
+    <Position X="2.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAEgAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enums\Tastes.cs</FileName>

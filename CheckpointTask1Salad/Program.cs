@@ -24,7 +24,7 @@ namespace CheckpointTask1Salad
                 Console.WriteLine("{0}", item.Name);
             }
 
-            greeksalad.Sort("weight");
+            greeksalad.Sort(x => x.Weight);
 
             Console.WriteLine("Sorted:");
             foreach (var item in greeksalad)

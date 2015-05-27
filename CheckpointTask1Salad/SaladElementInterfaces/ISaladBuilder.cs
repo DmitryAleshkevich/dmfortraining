@@ -15,6 +15,7 @@ namespace CheckpointTask1Salad
         void CookGroats();
         void CookMeat();
         void CookSpices();
+        void ChopeComponents();
         SaladCollection ReturnSalad();
     }
 }

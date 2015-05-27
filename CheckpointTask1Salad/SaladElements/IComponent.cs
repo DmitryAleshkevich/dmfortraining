@@ -11,5 +11,6 @@ namespace CheckpointTask1Salad
         Tastes Taste { get; set; }
         System.Collections.Generic.List<Vitamins> Vitamins { get; set; }
         double Weight { get; set; }
+        void AddToSalad();
     }
 }

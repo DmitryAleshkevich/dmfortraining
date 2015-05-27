@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CheckpointTask1Salad
 {
-    public struct SaladItemProperties : IColorable ,IComponent
+    public struct SaladItemProperties 
     {
         public double Calories { get; set; }
         public double Carbohydrates { get; set; }
@@ -16,5 +16,6 @@ namespace CheckpointTask1Salad
         public List<Vitamins> Vitamins { get; set; }
         public double Weight { get; set; }
         public string Color { get; set; }
+
     }
 }

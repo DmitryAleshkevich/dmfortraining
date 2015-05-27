@@ -17,6 +17,7 @@ namespace CheckpointTask1Salad
             builder.CookGreens();
             builder.CookGroats();
             builder.CookSpices();
+            builder.ChopeComponents();
             return builder.ReturnSalad();
         }
     }

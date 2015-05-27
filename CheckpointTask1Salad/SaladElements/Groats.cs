@@ -5,9 +5,9 @@ using System.Text;
 
 namespace CheckpointTask1Salad
 {
-    public class Groats : SaladItem, IBoilable, ISaladAddable
+    public class Groats : SaladItem, IBoilable
     {
-        public void AddToSalad()
+        public override void AddToSalad()
         {
             Console.WriteLine("Groats {0} was added to salad!", this.Name);
         }

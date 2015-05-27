@@ -25,9 +25,7 @@ namespace CheckpointTask1Salad
         public void Add(IComponent item)
         {
             componentItems.Add(item);
-            var tempitem = item as ISaladAddable;
-            if (tempitem != null) tempitem.AddToSalad();
-            else Console.WriteLine("The component {0} can`t be added to salad!");
+            item.AddToSalad();            
         }
 
         public void Clear()
@@ -77,12 +75,9 @@ namespace CheckpointTask1Salad
             return componentItems.Sum<IComponent>(x => x.Calories);
         }
 
-        public void Sort(string fieldName)
+        public void Sort(Func<IComponent,object> keySelector)
         {
-            if (fieldName == "weight")
-            {
-                componentItems = componentItems.OrderBy(x => x.Weight).ToList<IComponent>();
-            }
+            componentItems = componentItems.OrderBy(keySelector).ToList<IComponent>();
         }
 
         public IEnumerable<IComponent> GetItemsRangeForCalories(double lowvalue, double highvalue)

@@ -5,9 +5,9 @@ using System.Text;
 
 namespace CheckpointTask1Salad
 {
-    public class CannedFood : SaladItem, ISaladAddable, IOpenable
+    public class CannedFood : SaladItem, IOpenable
     {
-        public void AddToSalad()
+        public override void AddToSalad()
         {
             Console.WriteLine("Canned food {0} was added to salad!", this.Name);
         }
