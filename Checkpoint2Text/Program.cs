@@ -16,6 +16,9 @@ namespace Checkpoint2Text
             if (text != null)
             {
                 text.ShowSentensesWithOrdering(x => x.WordsCount);
+                text.ShowWordsByLengthInInterrogativeSentenses(5);
+                text.DeleteWordsByLengthAndConsolant(5);
+                text.SentensesColl.First().ReplaceWordsBySubstring(5, "replaced34");
             }           
         }
     }

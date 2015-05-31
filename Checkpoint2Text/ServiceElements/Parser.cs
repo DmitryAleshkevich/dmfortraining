@@ -11,17 +11,21 @@ namespace Checkpoint2Text
     {
         #region Services
 
+        private string path;
+
         private Dictionary<int, StringBuilder> rest = new Dictionary<int, StringBuilder>();
 
         private StreamReader OpenFile(string connectionPath)
         {
             try
             {
-                return new StreamReader(connectionPath);
+                this.path = connectionPath.Replace(".txt", "1.txt");
+                File.Copy(connectionPath, this.path);
+                return new StreamReader(this.path); ;
             }
             catch (Exception e)
             {
-                Console.WriteLine("The file {0} could not be read!",connectionPath);
+                Console.WriteLine("The file {0} could not be read, cause:",connectionPath);
                 Console.WriteLine(e.Message);
                 return null;
             }
@@ -88,6 +92,7 @@ namespace Checkpoint2Text
                     text.SentensesColl.AddRange(ParseSentense(strbuild, stringCounter));
                 }
                 reader.Close();
+                File.Delete(this.path);
                 return text;
             }
             return null;
@@ -96,7 +101,7 @@ namespace Checkpoint2Text
         private List<Sentense> ParseSentense(StringBuilder textLine, int stringCounter)
         {
             List<Sentense> sentenses = new List<Sentense>();
-            string pattern = @"([А-ЯA-Z]((т.п.|т.д.|пр.)|[^?!.\(]|\([^\)]*\))*[.?!])";
+            string pattern = @"([А-ЯA-Z]([^?!.\(]|\([^\)]*\))*[.?!])";
             var matches = Regex.Matches(textLine.ToString(), pattern);
             foreach (Match match in matches)
             {
@@ -159,7 +164,7 @@ namespace Checkpoint2Text
             return words;
         }
 
-        private List<Symbol> ParseSymbols(StringBuilder strbuild, int stringCounter)
+        public List<Symbol> ParseSymbols(StringBuilder strbuild, int stringCounter)
         {
             List<Symbol> listSymb = new List<Symbol>();
             foreach (Char s in strbuild.ToString())

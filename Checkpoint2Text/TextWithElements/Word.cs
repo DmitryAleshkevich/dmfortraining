@@ -29,6 +29,6 @@ namespace Checkpoint2Text
             {
                 s.ConsoleDraw();
             }
-        }
+        }        
     }
 }

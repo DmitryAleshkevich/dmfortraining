@@ -1,76 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Checkpoint2Text.Parser" Collapsed="true">
-    <Position X="8" Y="1" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAQAABAAAAAAAAAABIAAEAAAAAUAAAQAAAIAAAAA=</HashCode>
-      <FileName>Parser.cs</FileName>
+      <HashCode>AAAAAQAABAAAAAAAAAADIAAEAAAAAUAAAQAAAIAAAAA=</HashCode>
+      <FileName>ServiceElements\Parser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint2Text.Text" Collapsed="true">
-    <Position X="8" Y="2" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAE=</HashCode>
-      <FileName>Text.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAACQAAAAAAAAAAAAgAAAAAAAAAAAAE=</HashCode>
+      <FileName>TextWithElements\Text.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint2Text.Sentense" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="9.75" Y="1" Width="1.5" />
+    <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAQAgAAAAgAA=</HashCode>
-      <FileName>Sentense.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAACAAAAAAAAACEAAAAAAAQAgAAAAgAA=</HashCode>
+      <FileName>TextWithElements\Sentense.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Checkpoint2Text.Symbol">
-    <Position X="1.75" Y="1" Width="1.5" />
+  <Class Name="Checkpoint2Text.Symbol" Collapsed="true">
+    <Position X="1.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAAA=</HashCode>
-      <FileName>Symbol.cs</FileName>
+      <FileName>TextWithElements\Symbol.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Checkpoint2Text.PunctuationMark">
-    <Position X="2.75" Y="3.75" Width="1.5" />
+  <Class Name="Checkpoint2Text.PunctuationMark" Collapsed="true">
+    <Position X="2.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAAA=</HashCode>
-      <FileName>PunctuationMark.cs</FileName>
+      <FileName>TextWithElements\PunctuationMark.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Checkpoint2Text.LetterFigure">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+  <Class Name="Checkpoint2Text.LetterFigure" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAAA=</HashCode>
-      <FileName>LetterFigure.cs</FileName>
+      <FileName>TextWithElements\LetterFigure.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint2Text.Word" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="9.75" Y="2" Width="1.5" />
+    <Position X="0.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAgAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Word.cs</FileName>
+      <FileName>TextWithElements\Word.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Checkpoint2Text.WordComparer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceElements\WordComparer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="Checkpoint2Text.ISentenceItem" Collapsed="true">
-    <Position X="5.5" Y="2.25" Width="1.5" />
+    <Position X="2.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ISentenceItem.cs</FileName>
+      <FileName>TextWithElements\ISentenceItem.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Checkpoint2Text.IConsoleDrawable" Collapsed="true">
-    <Position X="5.5" Y="1" Width="1.5" />
+    <Position X="2.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IConsoleDrawable.cs</FileName>
+      <FileName>ServiceElements\IConsoleDrawable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="Checkpoint2Text.SentenseTypes" Collapsed="true">
-    <Position X="8" Y="3.25" Width="1.5" />
+    <Position X="5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SentenseTypes.cs</FileName>
+      <FileName>ServiceElements\SentenseTypes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

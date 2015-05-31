@@ -41,18 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IConsoleDrawable.cs" />
-    <Compile Include="ISentenceItem.cs" />
-    <Compile Include="LetterFigure.cs" />
-    <Compile Include="Parser.cs" />
+    <Compile Include="ServiceElements\IConsoleDrawable.cs" />
+    <Compile Include="TextWithElements\ISentenceItem.cs" />
+    <Compile Include="TextWithElements\LetterFigure.cs" />
+    <Compile Include="ServiceElements\Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PunctuationMark.cs" />
-    <Compile Include="Sentense.cs" />
-    <Compile Include="SentenseTypes.cs" />
-    <Compile Include="Symbol.cs" />
-    <Compile Include="Text.cs" />
-    <Compile Include="Word.cs" />
+    <Compile Include="TextWithElements\PunctuationMark.cs" />
+    <Compile Include="TextWithElements\Sentense.cs" />
+    <Compile Include="ServiceElements\SentenseTypes.cs" />
+    <Compile Include="TextWithElements\Symbol.cs" />
+    <Compile Include="TextWithElements\Text.cs" />
+    <Compile Include="TextWithElements\Word.cs" />
+    <Compile Include="ServiceElements\WordComparer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
