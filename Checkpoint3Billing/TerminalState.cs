@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Checkpoint3Billing
 {
-    public class Port
+    public enum TerminalState
     {
-        public PortState portState { get; set; }
+        On, Off, Call, Default = Off
     }
 }

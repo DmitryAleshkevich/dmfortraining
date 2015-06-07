@@ -7,5 +7,13 @@ namespace Checkpoint3Billing
 {
     public class AbonentNumber
     {
+        public int Number { get; private set; }
+        public string TextName { get; private set; }
+
+        public AbonentNumber(int number, string name)
+        {
+            this.Number = number;
+            this.TextName = name;
+        }
     }
 }

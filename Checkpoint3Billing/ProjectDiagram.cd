@@ -24,63 +24,42 @@
   <Class Name="Checkpoint3Billing.ATS" Collapsed="true">
     <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAAABAACJAgAAAAAEAAAAACAAAAIAKAAAAA=</HashCode>
       <FileName>ATS.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Contract" Collapsed="true">
     <Position X="8.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAQAAAAAAgAAAEwAAAAAAAAAAAABAAAAAAAAAAQ=</HashCode>
+      <HashCode>ABAAAAAAAAAABgAAAAgAAAAAAAAAAAAAAAAAAAAEABA=</HashCode>
       <FileName>Contract.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Client" Collapsed="true">
     <Position X="7" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAgA=</HashCode>
       <FileName>Client.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.AbonentNumber" Collapsed="true">
     <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbonentNumber.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Port" Collapsed="true">
     <Position X="5.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Port.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Checkpoint3Billing.Terminal">
-    <Position X="1.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Terminal.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Checkpoint3Billing.MobilePhone" Collapsed="true">
-    <Position X="0.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MobilePhone.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Checkpoint3Billing.StationPhone" Collapsed="true">
-    <Position X="2.75" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>StationPhone.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Abonent" Collapsed="true">
     <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAQACAAAAAAA=</HashCode>
       <FileName>Abonent.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -94,15 +73,44 @@
   <Class Name="Checkpoint3Billing.TariffPlanHistory" Collapsed="true">
     <Position X="7" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAABA=</HashCode>
       <FileName>TariffPlanHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkpoint3Billing.Terminal" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>Terminal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Checkpoint3Billing.MobilePhone" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MobilePhone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkpoint3Billing.StationPhone" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StationPhone.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="Checkpoint3Billing.PortState" Collapsed="true">
     <Position X="5.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAABAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQIAABAAAAAEAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PortState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Checkpoint3Billing.TerminalState" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQIAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>TerminalState.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

@@ -7,6 +7,6 @@ namespace Checkpoint3Billing
 {
     public enum PortState
     {
-        Off, Ready, Busy
+        Off, Ready, Busy, Call, Default = Ready
     }
 }

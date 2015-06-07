@@ -58,6 +58,7 @@
     <Compile Include="TariffPlan.cs" />
     <Compile Include="TariffPlanHistory.cs" />
     <Compile Include="Terminal.cs" />
+    <Compile Include="TerminalState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

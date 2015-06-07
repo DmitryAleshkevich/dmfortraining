@@ -13,14 +13,26 @@ namespace Checkpoint3Billing
 
         public void Pay(double sum)
         {
-
+            this.Balance += sum;
         }
 
-        public Contract(Abonent abonent, TariffPlanHistory planHistory)
+        public void CreatePlanHistory(DateTime date, TariffPlan tp)
         {
-            this.TheAbonent = abonent;
-            this.PlanHistory = planHistory;
-            this.Balance = 0;
+            this.PlanHistory = new TariffPlanHistory(this.TheAbonent, date, tp);
+        }
+
+        public string ChangePlan(DateTime date, TariffPlan tp)
+        {
+            if (PlanHistory != null)
+            {
+                return PlanHistory.ChangePlan(date, tp);    
+            }
+            return "Couldn`t change plan, cause of contract wasn`t signed!"; 
+        }
+
+        public Contract(Abonent abonent)
+        {
+            this.TheAbonent = abonent;            
         }
     }
 }
