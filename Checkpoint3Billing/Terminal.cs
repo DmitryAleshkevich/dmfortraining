@@ -8,14 +8,14 @@ namespace Checkpoint3Billing
 {
     public abstract class Terminal : INotifyPropertyChanged
     {
-        private TerminalState terminalState;
+        private TerminalState _terminalState;
 
         public TerminalState TerminalState
         {
-            get { return terminalState; }
+            get { return _terminalState; }
             set 
             { 
-                terminalState = value;
+                _terminalState = value;
                 NotifyPropertyChanged("TerminalState");
             }
         }
@@ -29,5 +29,6 @@ namespace Checkpoint3Billing
         } 
 
         public event PropertyChangedEventHandler PropertyChanged;
+
     }
 }

@@ -7,6 +7,6 @@ namespace Checkpoint3Billing
 {
     public class Port
     {
-        public PortState portState { get; set; }
+        public PortState PortState { get; set; }
     }
 }

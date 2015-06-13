@@ -6,8 +6,16 @@ using System.Text;
 
 namespace Checkpoint3Billing
 {
-    public class ATS
+    public class Ats
     {
+        public Ats(string companyName, List<Contract> contracts, List<int> numbersRange, List<Terminal> terminals, List<Port> ports, Dictionary<Terminal, Port> connections)
+        {
+            CompanyName = companyName;
+            NumbersRange = numbersRange;
+            Terminals = terminals;
+            Ports = ports;
+        }
+
         public string CompanyName { get; private set; }
         public List<Contract> Contracts { get; private set; }
         public List<int> NumbersRange { get; private set; }
@@ -17,23 +25,22 @@ namespace Checkpoint3Billing
 
         private int GenerateNewNumber()
         {
-            int element = NumbersRange.First();
+            var element = NumbersRange.First();
             NumbersRange.Remove(element);
             return element;
         }
 
         private Terminal ChooseTerminal()
         {
-            Terminal element = Terminals.First();
+            var element = Terminals.First();
             Terminals.Remove(element);
             return element;
         }
 
-        public Contract CreateContract(TariffPlan tp, double fee, Client client)
+        public Contract CreateContract(TariffPlan tp, Client client)
         {
-            Abonent newAbonent = new Abonent(client.Person,new AbonentNumber(GenerateNewNumber(),client.Person),ChooseTerminal());
-            Contract contract = new Contract(newAbonent);
-            contract.Pay(fee);
+            var newAbonent = new Abonent(client.Person,new AbonentNumber(GenerateNewNumber(),client.Person),ChooseTerminal());
+            var contract = new Contract(newAbonent);
             contract.CreatePlanHistory(DateTime.UtcNow, tp);
             Contracts.Add(contract);
             return contract;
@@ -41,30 +48,30 @@ namespace Checkpoint3Billing
 
         private Port FindFreePort()
         {
-            return this.Ports.Where(x => x.portState == PortState.Ready).First();
+            return this.Ports.First(x => x.PortState == PortState.Ready);
         }
 
         private Port FindActualPort(Terminal terminal)
         {
-            return Connections.Where(x => x.Key == terminal).First().Value;
+            return Connections.First(x => x.Key == terminal).Value;
         }
 
         private void TerminalStateChange(Terminal sender, PropertyChangedEventArgs args)
         {
-            if (args.PropertyName == "TerminalState")
+            if (args.PropertyName != "TerminalState") return;
+            if (!Terminals.Contains(sender)) return;
+            switch (sender.TerminalState)
             {
-                if (sender.TerminalState == TerminalState.On)
-                {
-                    Port newPort = FindFreePort();
-                    newPort.portState = PortState.Busy;
+                case TerminalState.On:
+                    var newPort = FindFreePort();
+                    newPort.PortState = PortState.Busy;
                     Connections.Add(sender, newPort);
-                }
-                else if (sender.TerminalState == TerminalState.Off)
-                {
-                    Port actualPort = FindActualPort(sender);
-                    actualPort.portState = PortState.Ready;
+                    break;
+                case TerminalState.Off:
+                    var actualPort = FindActualPort(sender);
+                    actualPort.PortState = PortState.Ready;
                     Connections.Remove(sender);
-                }
+                    break;
             }
         }
     }

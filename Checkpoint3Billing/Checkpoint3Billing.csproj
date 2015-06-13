@@ -47,6 +47,8 @@
     <Compile Include="Call.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Contract.cs" />
+    <Compile Include="ContractManager.cs" />
+    <Compile Include="EnquiryEventArgs.cs" />
     <Compile Include="MobilePhone.cs" />
     <Compile Include="Port.cs" />
     <Compile Include="PortState.cs" />

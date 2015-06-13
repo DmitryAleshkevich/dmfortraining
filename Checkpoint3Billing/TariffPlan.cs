@@ -10,12 +10,15 @@ namespace Checkpoint3Billing
         public double MonthlyFee { get; protected set; }
         public int FreeMinutes { get; protected set; }
         public double CallCost { get; protected set; }
-        
-        public TariffPlan(double monthlyFee, int freeMinutes, double callCost)
+        public Ats Ats { get; protected set; }
+        public string Name { get; protected set; }
+
+        protected TariffPlan(double monthlyFee, int freeMinutes, double callCost, string name)
         {
-            this.MonthlyFee = monthlyFee;
-            this.FreeMinutes = freeMinutes;
-            this.CallCost = callCost;
+            MonthlyFee = monthlyFee;
+            FreeMinutes = freeMinutes;
+            CallCost = callCost;
+            Name = name;
         }        
     }
 }

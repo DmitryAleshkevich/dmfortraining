@@ -3,7 +3,7 @@
   <Class Name="Checkpoint3Billing.TariffPlan" Collapsed="true">
     <Position X="1.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAQAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAQQAAACAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>TariffPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -21,7 +21,7 @@
       <FileName>Social.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Checkpoint3Billing.ATS" Collapsed="true">
+  <Class Name="Checkpoint3Billing.Ats" Collapsed="true">
     <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAABAACJAgAAAAAEAAAAACAAAAIAKAAAAA=</HashCode>
@@ -29,16 +29,16 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Contract" Collapsed="true">
-    <Position X="8.75" Y="1.5" Width="1.5" />
+    <Position X="7" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAABgAAAAgAAAAAAAAAAAAAAAAAAAAEABA=</HashCode>
       <FileName>Contract.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Client" Collapsed="true">
-    <Position X="7" Y="1.5" Width="1.5" />
+    <Position X="5.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAgA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAAAEEAAAAAAAAABAIAAAAIQAAAAAA=</HashCode>
       <FileName>Client.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -52,7 +52,7 @@
   <Class Name="Checkpoint3Billing.Port" Collapsed="true">
     <Position X="5.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Port.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -64,7 +64,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Call" Collapsed="true">
-    <Position X="5.25" Y="1.5" Width="1.5" />
+    <Position X="10.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Call.cs</FileName>
@@ -80,7 +80,7 @@
   <Class Name="Checkpoint3Billing.Terminal" Collapsed="true">
     <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAQAAAAEAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAACQAAAAAAAAA=</HashCode>
       <FileName>Terminal.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -97,6 +97,20 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StationPhone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkpoint3Billing.ContractManager" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContractManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkpoint3Billing.EnquiryEventArgs" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnquiryEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="Checkpoint3Billing.PortState" Collapsed="true">
