@@ -14,15 +14,31 @@ namespace Checkpoint3Billing
             NumbersRange = numbersRange;
             Terminals = terminals;
             Ports = ports;
+            foreach (var terminal in Terminals)
+            {
+                terminal.PropertyChanged += TerminalStateChange;
+            }
         }
 
+        #region Properties
         public string CompanyName { get; private set; }
         public List<Contract> Contracts { get; private set; }
         public List<int> NumbersRange { get; private set; }
         public List<Terminal> Terminals { get; private set; }
         public List<Port> Ports { get; private set; }
         public Dictionary<Terminal, Port> Connections { get; private set; }
+        #endregion
 
+        public Contract CreateContract(TariffPlan tp, Client client)
+        {
+            var newAbonent = new Abonent(client.Person, new AbonentNumber(GenerateNewNumber(), client.Person), ChooseTerminal());
+            var contract = new Contract(newAbonent);
+            contract.CreatePlanHistory(DateTime.UtcNow, tp);
+            Contracts.Add(contract);
+            return contract;
+        }
+
+        #region Auxiliary Methods
         private int GenerateNewNumber()
         {
             var element = NumbersRange.First();
@@ -36,16 +52,7 @@ namespace Checkpoint3Billing
             Terminals.Remove(element);
             return element;
         }
-
-        public Contract CreateContract(TariffPlan tp, Client client)
-        {
-            var newAbonent = new Abonent(client.Person,new AbonentNumber(GenerateNewNumber(),client.Person),ChooseTerminal());
-            var contract = new Contract(newAbonent);
-            contract.CreatePlanHistory(DateTime.UtcNow, tp);
-            Contracts.Add(contract);
-            return contract;
-        }
-
+        
         private Port FindFreePort()
         {
             return this.Ports.First(x => x.PortState == PortState.Ready);
@@ -55,24 +62,76 @@ namespace Checkpoint3Billing
         {
             return Connections.First(x => x.Key == terminal).Value;
         }
+        #endregion
 
-        private void TerminalStateChange(Terminal sender, PropertyChangedEventArgs args)
+        #region Event Terminal State Changed
+        private void TerminalStateChange(object sender, PropertyChangedEventArgs args)
         {
             if (args.PropertyName != "TerminalState") return;
-            if (!Terminals.Contains(sender)) return;
-            switch (sender.TerminalState)
+            var terminal = sender as Terminal;
+            if (terminal == null) return;
+            if (!Terminals.Contains(terminal)) return;
+            switch (terminal.TerminalState)
             {
                 case TerminalState.On:
                     var newPort = FindFreePort();
                     newPort.PortState = PortState.Busy;
-                    Connections.Add(sender, newPort);
+                    Connections.Add(terminal, newPort);
+                    newPort.Subscribe(terminal);
+                    terminal.Subscribe(newPort);
+                    newPort.Call += NewPortOnCall;
+                    newPort.AbonentAnswer += NewPortOnAbonentAnswer;
                     break;
                 case TerminalState.Off:
-                    var actualPort = FindActualPort(sender);
+                    var actualPort = FindActualPort(terminal);
                     actualPort.PortState = PortState.Ready;
-                    Connections.Remove(sender);
+                    Connections.Remove(terminal);
+                    actualPort.UnSubscribe(terminal);
+                    terminal.Subscribe(actualPort);
+                    actualPort.Call -= NewPortOnCall;
+                    actualPort.AbonentAnswer -= NewPortOnAbonentAnswer;                    
                     break;
             }
+        }        
+        #endregion
+        
+        #region Event Call
+        private void NewPortOnCall(object sender, CallEventArgs callEventArgs)
+        {
+            Port port;
+            if (Connections.TryGetValue(callEventArgs.Abonent.Terminal, out port))
+            {
+                if (port.PortState == PortState.Call)
+                {
+                    
+                }
+                else
+                {                    
+                    var incomePort = sender as Port;
+                    if (incomePort == null) return;                    
+                    var result = Connections.Where(x => x.Value.Equals(incomePort)).Select(x => x.Key).First();
+                    if (result == null) return;
+                    var incomeAbonent = (from x in Contracts
+                        where x.TheAbonent.Terminal.Equals(result)
+                        select x.TheAbonent).First();
+                    if (incomeAbonent == null) return;
+                    port.IncomingCall(incomeAbonent);
+                }
+            }
+            else
+            {
+                
+            }
         }
+        #endregion
+
+        #region Event AbonentAnswer
+
+        private void NewPortOnAbonentAnswer(object sender, AbonentAnswerEventArgs abonentAnswerEventArgs)
+        {
+            
+        }
+
+        #endregion
     }
 }

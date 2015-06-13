@@ -12,8 +12,8 @@ namespace Checkpoint3Billing
 
         public AbonentNumber(int number, string name)
         {
-            this.Number = number;
-            this.TextName = name;
+            Number = number;
+            TextName = name;
         }
     }
 }

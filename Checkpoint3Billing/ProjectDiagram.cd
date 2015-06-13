@@ -1,130 +1,151 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Checkpoint3Billing.TariffPlan" Collapsed="true">
-    <Position X="1.75" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAQQAAACAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>TariffPlan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Smart" Collapsed="true">
-    <Position X="2.75" Y="4.75" Width="1.5" />
+    <Position X="2.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Smart.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Social" Collapsed="true">
-    <Position X="0.5" Y="4.75" Width="1.5" />
+    <Position X="0.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Social.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Ats" Collapsed="true">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="6" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAABAACJAgAAAAAEAAAAACAAAAIAKAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAgABAACJAgAAAAAEAAAAACAAAAIAKAAAAA=</HashCode>
       <FileName>ATS.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Contract" Collapsed="true">
-    <Position X="7" Y="1.5" Width="1.5" />
+    <Position X="4" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAABgAAAAgAAAAAAAAAAAAAAAAAAAAEABA=</HashCode>
       <FileName>Contract.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Client" Collapsed="true">
-    <Position X="5.25" Y="1.5" Width="1.5" />
+    <Position X="0.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAAEEAAAAAAAAABAIAAAAIQAAAAAA=</HashCode>
       <FileName>Client.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.AbonentNumber" Collapsed="true">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="4" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbonentNumber.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Port" Collapsed="true">
-    <Position X="5.25" Y="2.5" Width="1.5" />
+    <Position X="6" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIQQAAgAAABIAAAAAAAgAAAAAACAAAAQAAAAACAACA=</HashCode>
       <FileName>Port.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Abonent" Collapsed="true">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Position X="4" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAQACAAAAAAA=</HashCode>
+      <HashCode>AAAAAQAIAAAABAAAAEAAAAAAAAAAAAAAAQACAAAAAAA=</HashCode>
       <FileName>Abonent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Call" Collapsed="true">
-    <Position X="10.5" Y="0.5" Width="1.5" />
+    <Position X="9.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Call.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.TariffPlanHistory" Collapsed="true">
-    <Position X="7" Y="2.5" Width="1.5" />
+    <Position X="4" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAAABA=</HashCode>
       <FileName>TariffPlanHistory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.Terminal" Collapsed="true">
-    <Position X="1.75" Y="0.5" Width="1.5" />
+    <Position X="6" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAACQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQQAAAAABAIAAAAAAAAAAgAACAAAASQAAAgCAICA=</HashCode>
       <FileName>Terminal.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Checkpoint3Billing.MobilePhone" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+    <Position X="7.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MobilePhone.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.StationPhone" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+    <Position X="5.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StationPhone.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.ContractManager" Collapsed="true">
-    <Position X="8.75" Y="1.5" Width="1.5" />
+    <Position X="2.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAwAAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContractManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Checkpoint3Billing.EnquiryEventArgs" Collapsed="true">
-    <Position X="10.5" Y="1.5" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EnquiryEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Checkpoint3Billing.CallEventArgs" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>CallEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkpoint3Billing.AbonentAnswerEventArgs" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbonentAnswerEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="Checkpoint3Billing.PortState" Collapsed="true">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Position X="7.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQIAABAAAAAEAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PortState.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Checkpoint3Billing.TerminalState" Collapsed="true">
-    <Position X="7" Y="3.75" Width="1.5" />
+    <Position X="7.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQIAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>TerminalState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Checkpoint3Billing.CallState" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAQAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CallState.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

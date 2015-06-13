@@ -9,6 +9,7 @@ namespace Checkpoint3Billing
     {
         public List<TariffPlan> Tariffs { get; private set; }
 
+        #region Methods
         public void AddTariffPlan(TariffPlan tp)
         {
             Tariffs.Add(tp);
@@ -18,11 +19,23 @@ namespace Checkpoint3Billing
         {
             Tariffs.Remove(tp);
         }
+        #endregion
 
-        private void EnquiryHandler(Client sender, EnquiryEventArgs args)
+        #region Event Enquiry
+        public void Subscribe(Client client)
+        {
+            client.Enquiry += EnquiryHandler;
+        }
+
+        private void EnquiryHandler(object sender, EnquiryEventArgs args)
         {
             var tariff = Tariffs.First(args.Selector);
-            sender.AddContract(tariff.Ats.CreateContract(tariff,sender));
+            var client = sender as Client;
+            if (client != null)
+            {
+                client.AddContract(tariff.Ats.CreateContract(tariff, client));
+            }
         }
+        #endregion
     }
 }

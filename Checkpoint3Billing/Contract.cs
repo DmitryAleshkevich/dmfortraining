@@ -11,6 +11,7 @@ namespace Checkpoint3Billing
         public TariffPlanHistory PlanHistory { get; private set; }
         public double Balance { get; private set; }
 
+        #region Methods
         public void Pay(double sum)
         {
             this.Balance += sum;
@@ -23,16 +24,13 @@ namespace Checkpoint3Billing
 
         public string ChangePlan(DateTime date, TariffPlan tp)
         {
-            if (PlanHistory != null)
-            {
-                return PlanHistory.ChangePlan(date, tp);    
-            }
-            return "Couldn`t change plan, cause of contract wasn`t signed!"; 
+            return PlanHistory != null ? PlanHistory.ChangePlan(date, tp) : "Couldn`t change plan, cause of contract wasn`t signed!";
         }
+        #endregion
 
         public Contract(Abonent abonent)
         {
-            this.TheAbonent = abonent;            
+            TheAbonent = abonent;            
         }
     }
 }

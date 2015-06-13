@@ -42,9 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abonent.cs" />
+    <Compile Include="AbonentAnswerEventArgs.cs" />
     <Compile Include="AbonentNumber.cs" />
     <Compile Include="ATS.cs" />
     <Compile Include="Call.cs" />
+    <Compile Include="CallEventArgs.cs" />
+    <Compile Include="CallState.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Contract.cs" />
     <Compile Include="ContractManager.cs" />
