@@ -41,31 +41,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abonent.cs" />
-    <Compile Include="AbonentAnswerEventArgs.cs" />
-    <Compile Include="AbonentNumber.cs" />
-    <Compile Include="ATS.cs" />
-    <Compile Include="Call.cs" />
-    <Compile Include="CallEventArgs.cs" />
-    <Compile Include="CallReportEventArgs.cs" />
-    <Compile Include="CallState.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="Contract.cs" />
-    <Compile Include="ContractManager.cs" />
-    <Compile Include="EnquiryEventArgs.cs" />
-    <Compile Include="MobilePhone.cs" />
-    <Compile Include="Port.cs" />
-    <Compile Include="PortState.cs" />
+    <Compile Include="Calling\Abonent.cs" />
+    <Compile Include="Calling\AbonentAnswerEventArgs.cs" />
+    <Compile Include="Calling\AbonentNumber.cs" />
+    <Compile Include="Calling\ATS.cs" />
+    <Compile Include="Calling\Call.cs" />
+    <Compile Include="Calling\CallEventArgs.cs" />
+    <Compile Include="Billing\CallReportEventArgs.cs" />
+    <Compile Include="ItemStates\CallState.cs" />
+    <Compile Include="Billing\Client.cs" />
+    <Compile Include="Billing\Contract.cs" />
+    <Compile Include="Billing\ContractManager.cs" />
+    <Compile Include="Billing\EnquiryEventArgs.cs" />
+    <Compile Include="Terminals\MobilePhone.cs" />
+    <Compile Include="Calling\Port.cs" />
+    <Compile Include="ItemStates\PortState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Smart.cs" />
-    <Compile Include="Social.cs" />
-    <Compile Include="StationPhone.cs" />
-    <Compile Include="TariffChangeEventArgs.cs" />
-    <Compile Include="TariffPlan.cs" />
-    <Compile Include="TariffPlanHistory.cs" />
-    <Compile Include="Terminal.cs" />
-    <Compile Include="TerminalState.cs" />
+    <Compile Include="Tariffs\Smart.cs" />
+    <Compile Include="Tariffs\Social.cs" />
+    <Compile Include="Terminals\StationPhone.cs" />
+    <Compile Include="Billing\TariffChangeEventArgs.cs" />
+    <Compile Include="Tariffs\TariffPlan.cs" />
+    <Compile Include="Billing\TariffPlanHistory.cs" />
+    <Compile Include="Terminals\Terminal.cs" />
+    <Compile Include="ItemStates\TerminalState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

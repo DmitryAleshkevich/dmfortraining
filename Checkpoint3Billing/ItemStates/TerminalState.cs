@@ -7,6 +7,10 @@ namespace Checkpoint3Billing
 {
     public enum TerminalState
     {
-        On, Off, Call, Default = Off, Waiting
+        On = 1, 
+        Off = 2, 
+        Call = 3, 
+        Waiting = 4,
+        Default = 5, 
     }
 }

@@ -33,11 +33,10 @@ namespace Checkpoint3Billing
 
         private void CallHandle(object sender, CallEventArgs args)
         {
+            if (Call == null) return;
             PortState = PortState.Call;
-            if (Call != null)
-            {
-                Call(this, args);
-            }
+            Console.WriteLine("Port has been informed about call to {0}",args.Abonent.AbonentName);
+            Call(this, args);
         }
 
         #endregion
@@ -48,10 +47,9 @@ namespace Checkpoint3Billing
         protected virtual void OnIncomeCall(Abonent abonent)
         {
             var handler = IncomeCall;
-            if (handler != null)
-            {
-                handler(this, new CallEventArgs(abonent));
-            }        
+            if (handler == null) return;
+            Console.WriteLine("Port indicates income call!");
+            handler(this, new CallEventArgs(abonent));
         }
 
         public void IncomingCall(Abonent abonent)
@@ -72,7 +70,11 @@ namespace Checkpoint3Billing
         protected virtual void OnAbonentAnswer(AbonentAnswerEventArgs e)
         {
             var handler = AbonentAnswer;
-            if (handler != null) handler(this, e);
+            if (handler != null)
+            {
+                Console.WriteLine("Port sent answer!");
+                handler(this, e);
+            }
         }
 
         #endregion        
@@ -93,6 +95,7 @@ namespace Checkpoint3Billing
             {
                 PortState = PortState.Busy;
             }
+            Console.WriteLine("Port got answer!");
             OnAtsAnswer(new AbonentAnswerEventArgs(callState));
         }
 

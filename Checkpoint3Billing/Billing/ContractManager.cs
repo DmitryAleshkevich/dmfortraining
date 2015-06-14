@@ -7,21 +7,26 @@ namespace Checkpoint3Billing
 {
     public class ContractManager
     {
-        public List<TariffPlan> Tariffs { get; private set; }
+        private readonly List<TariffPlan> _tariffs = new List<TariffPlan>();
+
+        public List<TariffPlan> Tariffs
+        {
+            get { return _tariffs; }
+        }
 
         #region Methods
         public void AddTariffPlan(TariffPlan tp)
         {
-            Tariffs.Add(tp);
+            _tariffs.Add(tp);
         }
 
         public void RemoveTariffPlan(TariffPlan tp)
         {
-            Tariffs.Remove(tp);
+            _tariffs.Remove(tp);
         }
         #endregion
 
-        #region Event Enquiry
+        #region Events
         public void Subscribe(Client client)
         {
             client.Enquiry += EnquiryHandler;
@@ -31,7 +36,16 @@ namespace Checkpoint3Billing
 
         private void ClientOnCallReport(object sender, CallReportEventArgs callReportEventArgs)
         {
-            callReportEventArgs.Contract.PlanHistory.LastHistoryChange.Value.Ats.GetCallReport(callReportEventArgs.Contract, callReportEventArgs.StartTime, callReportEventArgs.EndTime, callReportEventArgs.Selector);
+            var report = callReportEventArgs.Contract.PlanHistory.LastHistoryChange.Value.Ats.GetCallReport(callReportEventArgs.Contract, callReportEventArgs.StartTime, callReportEventArgs.EndTime, callReportEventArgs.Selector);
+            ShowReportInConsole(report);
+        }
+
+        private void ShowReportInConsole(IEnumerable<Call> report)
+        {
+            foreach (var call in report)
+            {
+                Console.WriteLine("Duration: {0},      Cost: {1},        Abonent: {2},    Date: {3}  ",call.Duration,call.Cost,call.AbonentAnswered.AbonentName,call.StartTime);
+            }
         }
 
         private void ClientOnTariffChange(object sender, TariffChangeEventArgs tariffChangeEventArgs)
@@ -44,22 +58,20 @@ namespace Checkpoint3Billing
             if (contract == null) return;
             var oldtariff = contract.PlanHistory.LastHistoryChange.Value;
             var result = contract.PlanHistory.ChangePlan(tariffChangeEventArgs.Date, tariff);
+            Console.WriteLine("Manager inform: {0}!",result);
             if (result != "Success") return;
             oldtariff.Ats.RemoveContract(contract);
             tariff.Ats.AddContract(contract);
         }
-
-
 
         private void EnquiryHandler(object sender, EnquiryEventArgs args)
         {
             var tariff = Tariffs.First(args.Selector);
             if (tariff == null) return;
             var client = sender as Client;
-            if (client != null)
-            {
-                client.AddContract(tariff.Ats.CreateContract(tariff, client));
-            }
+            if (client == null) return;
+            client.AddContract(tariff.Ats.CreateContract(tariff, client));
+            Console.WriteLine("Manager clinches deal, now {0} got new contract with ATS {1} and tariff {2}!",client.Person,tariff.Ats.CompanyName,tariff.Name);
         }
         #endregion
     }

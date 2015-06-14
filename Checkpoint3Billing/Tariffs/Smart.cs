@@ -9,8 +9,8 @@ namespace Checkpoint3Billing
     {
         public int InternetTraffic { get; private set; }
 
-        public Smart(int internetTraffic, double monthlyFee, int freeMinutes, double callCost, string name)
-            : base(monthlyFee, freeMinutes, callCost, name)
+        public Smart(int internetTraffic, double monthlyFee, int freeMinutes, double callCost, string name, Ats ats)
+            : base(monthlyFee, freeMinutes, callCost, name, ats)
         {
             InternetTraffic = internetTraffic;
         }

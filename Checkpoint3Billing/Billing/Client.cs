@@ -18,13 +18,18 @@ namespace Checkpoint3Billing
         #region Properties
         public string Person { get; private set; }
         public int Age { get; private set; }
-        public List<Contract> Contracts { get; private set; }
+        private readonly List<Contract> _contracts = new List<Contract>();        
+        public List<Contract> Contracts
+        {
+            get { return _contracts; }            
+        }
+
         #endregion
 
         #region Methods
         public void AddContract(Contract contract)
         {
-            Contracts.Add(contract);
+            _contracts.Add(contract);
         }
         #endregion
 
@@ -33,6 +38,7 @@ namespace Checkpoint3Billing
 
         public void SendEnquiry(Func<TariffPlan,bool> selector)
         {
+            Console.WriteLine("Client {0} send enquiry for contract",this.Person);
             OnEnquired(selector);
         }
 
@@ -51,6 +57,7 @@ namespace Checkpoint3Billing
 
         public void ChangeTariff(Abonent abonent, DateTime date, Func<TariffPlan, bool> selector)
         {
+            Console.WriteLine("Abonent {0} wants to change tariff!",abonent.AbonentName);
             OnTariffChange(new TariffChangeEventArgs(selector,date,abonent));
         }
 
@@ -68,6 +75,7 @@ namespace Checkpoint3Billing
 
         public void GetReport(Contract contract, DateTime startTime, DateTime endTime, Func<Call,bool> selector)
         {
+            Console.WriteLine("Abonent {0} wants call report!",contract.TheAbonent.AbonentName);
             OnCallReport(new CallReportEventArgs(contract,selector,endTime,startTime));
         }
 

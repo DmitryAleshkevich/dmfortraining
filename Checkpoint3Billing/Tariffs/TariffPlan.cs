@@ -13,12 +13,13 @@ namespace Checkpoint3Billing
         public Ats Ats { get; protected set; }
         public string Name { get; protected set; }
 
-        protected TariffPlan(double monthlyFee, int freeMinutes, double callCost, string name)
+        protected TariffPlan(double monthlyFee, int freeMinutes, double callCost, string name, Ats ats)
         {
             MonthlyFee = monthlyFee;
             FreeMinutes = freeMinutes;
             CallCost = callCost;
             Name = name;
+            Ats = ats;
         }        
     }
 }

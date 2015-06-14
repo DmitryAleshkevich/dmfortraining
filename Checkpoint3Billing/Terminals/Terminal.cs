@@ -23,10 +23,9 @@ namespace Checkpoint3Billing
 
         protected virtual void NotifyPropertyChanged(string property)
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
+            if (PropertyChanged == null) return;
+            Console.WriteLine("Terminal has been {0}",TerminalState);
+            PropertyChanged(this, new PropertyChangedEventArgs(property));
         } 
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -35,11 +34,10 @@ namespace Checkpoint3Billing
         #region EventCall
         public void MakeCall(Abonent abonent)
         {
-            _terminalState = TerminalState.Call;
-            if (Call != null)
-            {
-                Call(this, new CallEventArgs(abonent));
-            }
+            if (Call == null) return;
+            _terminalState = TerminalState.Call;            
+            Console.WriteLine("Call to {0}...",abonent.AbonentName);
+            Call(this, new CallEventArgs(abonent));
         }
 
         public event EventHandler<CallEventArgs> Call;
@@ -64,10 +62,9 @@ namespace Checkpoint3Billing
         #region Event Income Call
         private void PortOnIncomeCall(object sender, CallEventArgs callEventArgs)
         {
-            if (IncomeCall != null)
-            {
-                IncomeCall(this, callEventArgs);
-            }        
+            if (IncomeCall == null) return;
+            Console.WriteLine("Terminal receives income call!");
+            IncomeCall(this, callEventArgs);
         }
 
         public event EventHandler<CallEventArgs> IncomeCall;
@@ -80,7 +77,9 @@ namespace Checkpoint3Billing
         protected virtual void OnAbonentAnswer(AbonentAnswerEventArgs e)
         {
             var handler = AbonentAnswer;
-            if (handler != null) handler(this, e);
+            if (handler == null) return;
+            Console.WriteLine("Terminal sent answer!");
+            handler(this, e);
         }
 
         public void Answer(CallState callState)
@@ -98,6 +97,7 @@ namespace Checkpoint3Billing
             {
                 TerminalState = TerminalState.Waiting;
             }
+            Console.WriteLine("Terminal got answer!");            
             OnAtsAnswer(abonentAnswerEventArgs);
         }
 

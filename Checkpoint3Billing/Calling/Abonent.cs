@@ -37,23 +37,25 @@ namespace Checkpoint3Billing
         #region Event AtsAnswer
         private void TerminalOnAtsAnswer(object sender, AbonentAnswerEventArgs abonentAnswerEventArgs)
         {
-            if (abonentAnswerEventArgs.CallState == CallState.Established)
-            {
-                IsTalking = true;
-            }        
+            Console.WriteLine("{0}! This abonent is {1}!",AbonentName, abonentAnswerEventArgs.CallState);
+            IsTalking = abonentAnswerEventArgs.CallState == CallState.Established;
         }
+
         #endregion
 
         #region Event Income Call
         private void TerminalOnIncomeCall(object sender, CallEventArgs callEventArgs)
         {
+            Console.WriteLine("{0}! Income call from {1}",AbonentName,callEventArgs.Abonent.AbonentName);
             var random = new Random();
-            if (random.Next(0, 2) == 0)
+            if (random.Next(0, 10) == 0)
             {
+                Console.WriteLine("{0} declined call!",AbonentName);
                 Terminal.Answer(CallState.Declined);
             }
             else
             {
+                Console.WriteLine("{0} says hello!",AbonentName);
                 Terminal.Answer(CallState.Established);
                 IsTalking = true;
             }
@@ -67,10 +69,9 @@ namespace Checkpoint3Billing
 
         public void FinishCall()
         {
-            if (IsTalking)
-            {
-                Terminal.FinishCall();
-            }
+            if (!IsTalking) return;
+            Console.WriteLine("{0} finishes the call!",AbonentName);
+            Terminal.FinishCall();
         }
 
         public Abonent(string name, AbonentNumber number, Terminal terminal)
