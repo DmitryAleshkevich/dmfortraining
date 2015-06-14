@@ -9,7 +9,26 @@ namespace Checkpoint3Billing
     {
         public PortState PortState { get; set; }
 
+        #region Subscribe
+
+        public void Subscribe(Terminal terminal)
+        {
+            terminal.Call += CallHandle;
+            terminal.AbonentAnswer += AbonentAnswerHandle;
+            terminal.CallFinish += TerminalOnCallFinish;
+        }
+        
+        public void UnSubscribe(Terminal terminal)
+        {
+            terminal.Call -= CallHandle;
+            terminal.AbonentAnswer -= AbonentAnswerHandle;
+            terminal.CallFinish -= TerminalOnCallFinish;
+        }
+        
+        #endregion
+
         #region Event Call
+
         public event EventHandler<CallEventArgs> Call;
 
         private void CallHandle(object sender, CallEventArgs args)
@@ -21,17 +40,6 @@ namespace Checkpoint3Billing
             }
         }
 
-        public void Subscribe(Terminal terminal)
-        {
-            terminal.Call += CallHandle;
-            terminal.AbonentAnswer += AbonentAnswerHandle;
-        }
-
-        public void UnSubscribe(Terminal terminal)
-        {
-            terminal.Call -= CallHandle;
-            terminal.AbonentAnswer -= AbonentAnswerHandle;
-        }
         #endregion
 
         #region Event IncomeCall
@@ -68,5 +76,43 @@ namespace Checkpoint3Billing
         }
 
         #endregion        
+
+        #region Event AtsAnswer
+
+        public event EventHandler<AbonentAnswerEventArgs> AtsAnswer;
+
+        protected virtual void OnAtsAnswer(AbonentAnswerEventArgs e)
+        {
+            var handler = AtsAnswer;
+            if (handler != null) handler(this, e);
+        }
+
+        public void GetAtsAnswer(CallState callState)
+        {
+            if (callState != CallState.Established)
+            {
+                PortState = PortState.Busy;
+            }
+            OnAtsAnswer(new AbonentAnswerEventArgs(callState));
+        }
+
+        #endregion
+
+        #region Event Call Finish
+
+        private void TerminalOnCallFinish(object sender, EventArgs eventArgs)
+        {
+            OnCallFinish();    
+        }
+
+        public event EventHandler CallFinish;
+
+        protected virtual void OnCallFinish()
+        {
+            var handler = CallFinish;
+            if (handler != null) handler(this, EventArgs.Empty);
+        }
+
+        #endregion       
     }
 }

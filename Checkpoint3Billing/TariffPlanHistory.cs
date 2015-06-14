@@ -18,17 +18,16 @@ namespace Checkpoint3Billing
             }
         }
 
+        public TariffPlan GetTpByDate(DateTime date)
+        {
+            return History.Last(x => x.Key <= date).Value;
+        }
+
         public string ChangePlan(DateTime date, TariffPlan tp)
         {
-            if (date.Month - this.LastHistoryChange.Key.Month > 0)
-            {
-                this.History.Add(date, tp);
-                return "Success";
-            }
-            else
-            {
-                return "Error! You can`t change plan in this month!";
-            }
+            if (date.Month - LastHistoryChange.Key.Month <= 0) return "Error! You can`t change plan in this month!";
+            History.Add(date, tp);
+            return "Success";
         }
 
         public TariffPlanHistory(Abonent abonent, DateTime date, TariffPlan tp)

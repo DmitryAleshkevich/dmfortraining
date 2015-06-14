@@ -44,5 +44,39 @@ namespace Checkpoint3Billing
             }
         }
         #endregion
+
+        #region Event Tariff Change
+
+        public event EventHandler<TariffChangeEventArgs> TariffChange;
+
+        public void ChangeTariff(Abonent abonent, DateTime date, Func<TariffPlan, bool> selector)
+        {
+            OnTariffChange(new TariffChangeEventArgs(selector,date,abonent));
+        }
+
+        protected virtual void OnTariffChange(TariffChangeEventArgs e)
+        {
+            var handler = TariffChange;
+            if (handler != null) handler(this, e);
+        }
+
+        #endregion
+
+        #region Event CallReport
+
+        public event EventHandler<CallReportEventArgs> CallReport;
+
+        public void GetReport(Contract contract, DateTime startTime, DateTime endTime, Func<Call,bool> selector)
+        {
+            OnCallReport(new CallReportEventArgs(contract,selector,endTime,startTime));
+        }
+
+        protected virtual void OnCallReport(CallReportEventArgs e)
+        {
+            var handler = CallReport;
+            if (handler != null) handler(this, e);
+        }
+
+        #endregion
     }
 }

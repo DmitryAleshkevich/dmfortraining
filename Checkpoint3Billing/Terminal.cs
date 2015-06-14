@@ -45,17 +45,23 @@ namespace Checkpoint3Billing
         public event EventHandler<CallEventArgs> Call;
         #endregion
 
-        #region Event Income Call
+        #region Subscribe
+
         public void Subscribe(Port port)
         {
-            port.IncomeCall += PortOnIncomeCall;    
+            port.IncomeCall += PortOnIncomeCall;
+            port.AtsAnswer += PortOnAtsAnswer;
         }
 
         public void UnSubscribe(Port port)
         {
             port.IncomeCall -= PortOnIncomeCall;
+            port.AtsAnswer -= PortOnAtsAnswer;
         }
 
+        #endregion
+
+        #region Event Income Call
         private void PortOnIncomeCall(object sender, CallEventArgs callEventArgs)
         {
             if (IncomeCall != null)
@@ -84,5 +90,42 @@ namespace Checkpoint3Billing
 
         #endregion
         
+        #region Event AtsAnswer
+
+        private void PortOnAtsAnswer(object sender, AbonentAnswerEventArgs abonentAnswerEventArgs)
+        {
+            if (abonentAnswerEventArgs.CallState != CallState.Established)
+            {
+                TerminalState = TerminalState.Waiting;
+            }
+            OnAtsAnswer(abonentAnswerEventArgs);
+        }
+
+        public event EventHandler<AbonentAnswerEventArgs> AtsAnswer;
+
+        protected virtual void OnAtsAnswer(AbonentAnswerEventArgs e)
+        {
+            var handler = AtsAnswer;
+            if (handler != null) handler(this, e);
+        }
+
+        #endregion
+
+        #region Event CallFinish
+
+        public event EventHandler CallFinish;
+
+        protected virtual void OnCallFinish()
+        {
+            var handler = CallFinish;
+            if (handler != null) handler(this, EventArgs.Empty);
+        }
+
+        public void FinishCall()
+        {
+            OnCallFinish();
+        }
+
+        #endregion       
     }
 }

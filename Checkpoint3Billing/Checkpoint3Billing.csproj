@@ -47,6 +47,7 @@
     <Compile Include="ATS.cs" />
     <Compile Include="Call.cs" />
     <Compile Include="CallEventArgs.cs" />
+    <Compile Include="CallReportEventArgs.cs" />
     <Compile Include="CallState.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Contract.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Smart.cs" />
     <Compile Include="Social.cs" />
     <Compile Include="StationPhone.cs" />
+    <Compile Include="TariffChangeEventArgs.cs" />
     <Compile Include="TariffPlan.cs" />
     <Compile Include="TariffPlanHistory.cs" />
     <Compile Include="Terminal.cs" />

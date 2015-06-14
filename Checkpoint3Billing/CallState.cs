@@ -7,6 +7,6 @@ namespace Checkpoint3Billing
 {
     public enum CallState
     {
-        Established, Declined, Offline, Error
+        Established, Declined, Offline, Error, Busy
     }
 }
