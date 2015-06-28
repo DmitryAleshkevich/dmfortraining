@@ -29,7 +29,11 @@ namespace DALClassLibrary.DAL
                 }
             }
             Mapper.CreateMap<Good, Goods>();
-            return Mapper.Map<Good, Goods>(this);
+            var good = Mapper.Map<Good, Goods>(this);
+            if (_contextServiceDataEntities == null) return good;
+            _contextServiceDataEntities.Goods.Add(good);
+            _contextServiceDataEntities.SaveChanges();
+            return good;
         }
 
     }

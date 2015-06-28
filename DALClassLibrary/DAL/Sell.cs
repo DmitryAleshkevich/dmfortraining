@@ -24,20 +24,7 @@ namespace DALClassLibrary.DAL
         public float Sum { get; private set; }
 
         public Sells ConvertToEntity()
-        {
-            if (_contextServiceDataEntities != null)
-            {
-                const double tolerance = 0.0001;
-                var entity =
-                    _contextServiceDataEntities.Sells.FirstOrDefault(
-                        x =>
-                            x.client == Client.ConvertToEntity().id && x.good == Good.ConvertToEntity().id &&
-                            x.manager == Manager.ConvertToEntity().id && x.date == Date && Math.Abs((double) (x.sum - Sum)) < tolerance);
-                if (entity != null)
-                {
-                    return entity;
-                }
-            }
+        {            
             var sells = new Sells()
             {
                 client = Client.ConvertToEntity().id,

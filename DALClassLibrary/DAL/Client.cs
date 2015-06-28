@@ -28,7 +28,11 @@ namespace DALClassLibrary.DAL
                 }
             }
             Mapper.CreateMap<Client, Clients>();
-            return Mapper.Map<Client, Clients>(this);
+            var client = Mapper.Map<Client, Clients>(this);
+            if (_contextServiceDataEntities == null) return client;
+            _contextServiceDataEntities.Clients.Add(client);
+            _contextServiceDataEntities.SaveChanges();
+            return client;
         }
     }
 }

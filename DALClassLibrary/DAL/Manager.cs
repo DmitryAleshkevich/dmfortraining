@@ -26,7 +26,11 @@ namespace DALClassLibrary.DAL
                 }
             }
             Mapper.CreateMap<Manager, Managers>();
-            return Mapper.Map<Manager, Managers>(this);
+            var manager = Mapper.Map<Manager, Managers>(this);
+            if (_contextServiceDataEntities == null) return manager;
+            _contextServiceDataEntities.Managers.Add(manager);
+            _contextServiceDataEntities.SaveChanges();
+            return manager;
         }
     }
 }

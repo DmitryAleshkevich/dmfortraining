@@ -59,7 +59,8 @@ namespace DALClassLibrary.DAL
 
         public void SaveSells()
         {
-            _contextServiceDataEntities.Sells.AddRange(_sellslist.Select(x => x.ConvertToEntity()));
+            var newlist = _sellslist.Select(sell => sell.ConvertToEntity()).ToList();
+            _contextServiceDataEntities.Sells.AddRange(newlist);
             _contextServiceDataEntities.SaveChanges();
         }
     }

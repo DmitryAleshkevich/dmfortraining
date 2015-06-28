@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using DALClassLibrary.DAL;
 
@@ -17,7 +18,7 @@ namespace BLClassLibrary
         {
             try
             {
-                using (var reader = (StreamReader)TextReader.Synchronized(new StreamReader(filePath)))
+                using (var reader = TextReader.Synchronized(new StreamReader(filePath)))
                 {
                     string line;
                     var nameManager = Regex.Split(fileName, @"_");
@@ -26,6 +27,7 @@ namespace BLClassLibrary
                         var data = Regex.Split(line,@";");
                         CreateSell(data, nameManager[0]);
                     }
+                    Thread.Sleep(10000);
                     _sells.SaveSells();
                 }
             }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesClassLibrary", "Ent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLClassLibrary", "BLClassLibrary\BLClassLibrary.csproj", "{C21AE573-A924-44CC-8AD2-D391E639E50D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCollectorService", "FileCollectorService\FileCollectorService.csproj", "{291B6F2E-BBAC-491D-B107-1FE5DA5556D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C21AE573-A924-44CC-8AD2-D391E639E50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C21AE573-A924-44CC-8AD2-D391E639E50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C21AE573-A924-44CC-8AD2-D391E639E50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291B6F2E-BBAC-491D-B107-1FE5DA5556D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291B6F2E-BBAC-491D-B107-1FE5DA5556D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291B6F2E-BBAC-491D-B107-1FE5DA5556D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291B6F2E-BBAC-491D-B107-1FE5DA5556D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
