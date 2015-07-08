@@ -1,0 +1,42 @@
+﻿@model SalesMVC.Models.UserViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet"/>    
+</head>
+<body>
+    
+<div id="header">
+    <div class="title">@ViewBag.Title</div>
+</div>
+<div id="content">
+
+    @if (Model == null)
+    {
+        <p> Hello, guest! </p>
+        <p> Click @Html.ActionLink("Login", "Login", "Shared") to enter the site. </p>
+        <p> While you anonymous, you can`t see the sales information! </p>
+    }
+    else
+    {
+        <p> Hello, @Model.UserName! </p>
+        <p> You can see the sales information in the right section of site. </p>
+        if (@Model.UserRole == "Admin")
+         {
+             <p> Click @Html.ActionLink("Create new user", "Register", "Shared") for addind new site user. </p>
+         }         
+    }        
+</div>
+<div id="salesdata">
+    @RenderBody()    
+</div>
+</body>
+</html>

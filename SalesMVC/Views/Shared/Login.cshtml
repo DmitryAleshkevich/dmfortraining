@@ -1,0 +1,27 @@
+﻿@model SalesMVC.Models.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Authorization</title>
+</head>
+<body>
+<div>
+    <h1>Sales authentification</h1>
+<p>Please log in to access all featurs:</p>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    @Html.EditorForModel()
+    <p>
+        <input type="submit" value="Login"/>
+    </p>    
+}
+</div>
+</body>
+</html>

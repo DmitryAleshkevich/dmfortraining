@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6e74e3a09f6f4789bd58233f6c8cabe5" Name="Diagram1">
+        <EntityTypeShape EntityType="SalesDalaModel.Clients" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesDalaModel.Goods" Width="1.5" PointX="5.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesDalaModel.Managers" Width="1.5" PointX="2.875" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesDalaModel.Sales" Width="1.5" PointX="2.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesDalaModel.sysdiagrams" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="SalesDalaModel.FK_Sells_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesDalaModel.FK_Sells_Goods" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesDalaModel.FK_Sells_Managers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

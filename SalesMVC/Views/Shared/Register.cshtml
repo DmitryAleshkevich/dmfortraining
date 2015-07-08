@@ -1,0 +1,26 @@
+﻿@model SalesMVC.Models.UserViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Creation</title>
+</head>
+<body>
+    <div>
+        <h1>New user creation</h1>
+        <p>Please fill required data to create new user:</p>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            @Html.EditorForModel()
+            <p>
+                <input type="submit" value="Save" />
+            </p>
+        }
+    </div></body>
+</html>
