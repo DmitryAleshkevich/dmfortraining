@@ -76,6 +76,21 @@ namespace DataAccessLayer
             _contextSales.SaveChanges();
         }
 
+        public void EditEntity(Sale sale)
+        {
+            var sales = _contextSales.Sales.FirstOrDefault(x => x.id == sale.Id);
+            if (sales == null)
+            {
+                return;
+            }
+            sales.client = SaveClientToEntity(sale.Client).id;
+            sales.good = SaveGoodToEntity(sale.Good).id;
+            sales.manager = SaveManagerToEntity(sale.Manager).id;
+            sales.date = sale.Date;
+            sales.sum = sale.Sum;
+            _contextSales.SaveChanges();
+        }
+
         private Client ConvertEntityToClient(Clients clients)
         {
             var client = Mapper.Map<Clients, Client>(clients);
@@ -96,7 +111,7 @@ namespace DataAccessLayer
 
         public Sale ConvertEntity(Sales sales)
         {
-            return new Sale(sales.date, ConvertEntityToClient(sales.Clients), ConvertEntityToGood(sales.Goods), ConvertEntityToManager(sales.Managers), (float)sales.sum);           
+            return new Sale(sales.date, ConvertEntityToClient(sales.Clients), ConvertEntityToGood(sales.Goods), ConvertEntityToManager(sales.Managers), (float)sales.sum, sales.id);           
         }
 
     }

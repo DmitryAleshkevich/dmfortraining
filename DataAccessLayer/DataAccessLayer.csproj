@@ -53,13 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractSale.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Good.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sale.cs" />
+    <Compile Include="SalePerfomance.cs" />
     <Compile Include="SalesRepository.cs" />
     <Compile Include="ToEntityMapper.cs" />
+    <Compile Include="ToPerfomanceMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

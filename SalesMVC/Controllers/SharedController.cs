@@ -17,6 +17,13 @@ namespace SalesMVC.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Quit()
+        {
+            Session["usermodel"] = null;
+            return RedirectToAction("Index", "Home");
+        }
+
         [HttpPost]
         public ActionResult Login(LoginViewModel model, string returnUrl)
         {
@@ -50,5 +57,6 @@ namespace SalesMVC.Controllers
             AuthProvider.CreateNewUser(model.UserName, model.Password, model.UserRole);
             return RedirectToAction("Index", "Home");
         }
+        
     }
 }
