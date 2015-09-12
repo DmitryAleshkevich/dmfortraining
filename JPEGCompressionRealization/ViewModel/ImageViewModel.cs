@@ -72,7 +72,7 @@ namespace JPEGCompressionRealization.ViewModel
             }
 
             var bmImage = ImageModel.Compressor.Compress(ImageModel.ImageModelPath);
-
+            
             using (MemoryStream memory = new MemoryStream())
             {
                 bmImage.Save(memory, ImageFormat.Png);
@@ -83,7 +83,7 @@ namespace JPEGCompressionRealization.ViewModel
                 bmi.CacheOption = BitmapCacheOption.OnLoad;
                 bmi.EndInit();
                 CompressedImage = bmi;
-            }            
+            }
         }
     }
 }

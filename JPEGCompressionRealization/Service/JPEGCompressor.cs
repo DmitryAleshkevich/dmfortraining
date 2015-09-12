@@ -23,17 +23,7 @@ namespace JPEGCompressionRealization.Service
             DiscreteCosineTransform(ref YCrCbImage, dctMatrix, dcttMatrix);
 
             // stage 3: quantization:
-            double[,] quantizationMatrix = new double[8, 8]
-            {
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-                { 20, 20, 20, 20, 20, 20, 20, 20 },
-            };
+            double[,] quantizationMatrix = CreateQuantizationMatrix(3);
 
             Quantization(ref YCrCbImage, quantizationMatrix);
 
@@ -94,6 +84,21 @@ namespace JPEGCompressionRealization.Service
                     {
                         matrix[i, j] = 0.5 * Math.Cos((2 * j + 1) * i * Math.PI / 16);
                     }
+                }
+            }
+
+            return matrix;
+        }
+
+        private double[,] CreateQuantizationMatrix(int comprcoeff)
+        {
+            double[,] matrix = new double[8, 8];
+
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    matrix[i,j] = 1 + ((1 + i + j) * comprcoeff);
                 }
             }
 
